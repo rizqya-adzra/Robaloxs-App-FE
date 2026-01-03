@@ -1,0 +1,44 @@
+<template>
+  <button :class="[base, variant, color]">
+    <slot />
+    <Icon v-if="icon" :name="icon" size="28" />
+  </button>
+</template>
+
+<script setup lang="ts">
+const props = defineProps<{
+  variant?: 'solid' | 'outlined'
+  color?: 'secondary' | 'primary' | 'black'
+  icon?: string
+}>()
+
+const base = 'font-inter flex justify-center items-center gap-3 font-inter font-bold py-2 px-8 rounded-3xl transition-all duration-300'
+
+const variant = computed(() => {
+  if (props.variant === 'outlined') {
+    return 'border-4 bg-transparent'
+  } return ''
+})
+
+const color = computed(() => {
+  switch (props.color) {
+    case 'secondary':
+      if (props.variant === 'outlined') {
+        return 'border-secondary text-black hover:bg-secondary'
+      }
+      return 'bg-secondary hover:bg-secondary/80 text-black'
+    case 'primary':
+      if (props.variant === 'outlined') {
+        return 'border-primary text-primary hover:bg-primary hover:text-white'
+      }
+      return 'bg-primary hover:bg-primary/80 text-white'
+    case 'black':
+      if (props.variant === 'outlined') {
+        return 'border-black text-black hover:bg-black hover:text-white'
+      }
+      return 'bg-black hover:bg-black/80 text-white'
+    default:
+      return ''
+  }
+})
+</script>
