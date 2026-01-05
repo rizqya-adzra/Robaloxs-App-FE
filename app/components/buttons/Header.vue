@@ -1,16 +1,19 @@
 <template>
-    <div class="relative">
-      <button @click="toggle" class="flex items-center gap-2 font-semibold">
+  <div 
+    class="relative h-full flex items-center" @mouseenter="onHover(true)" @mouseleave="onHover(false)">   
+    <button class="flex items-center gap-2 font-semibold h-full">
       {{ label }}
-      <Icon v-if="variant === 'dropdown'" name="mdi:chevron-down" class="transition-transform" :class="{ 'rotate-180': open }" />
-      </button>
-      <div v-if="isActive" class="h-1 w-full bg-secondary rounded-full mt-2"/>        
-      <div v-if="variant === 'dropdown' && open" class="absolute left-0 mt-4 w-56 bg-white rounded-xl shadow-lg border p-3 space-y-2 z-50">
-        <NuxtLink v-for="item in items" key="item.to" :to="item.to" class="block px-4 py-2 rounded-lg hover:bg-gray-100" @click="open = false">
+      <Icon v-if="variant === 'dropdown'" name="mdi:chevron-down" class="transition-transform duration-300" :class="{ 'rotate-180': open }" />
+    </button>
+    <div v-if="isActive" class="absolute bottom-0 h-1 w-full bg-secondary rounded-full" />
+    <div v-if="variant === 'dropdown' && open" class="absolute top-full left-0 pt-4 w-56 z-50">
+      <div class="bg-white rounded-xl shadow-lg border p-3 space-y-2">
+        <NuxtLink v-for="item in items" :key="item.to" :to="item.to" class="block px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors" @click="open = false">
           {{ item.label }}
         </NuxtLink>
       </div>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -32,9 +35,9 @@ const isActive = computed(() => {
   return route.path.startsWith(props.to)
 })
 
-const toggle = () => {
+const onHover = (state: boolean) => {
   if (props.variant === 'dropdown') {
-    open.value = !open.value
+    open.value = state
   }
 }
 </script>

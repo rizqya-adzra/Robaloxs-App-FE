@@ -12,3 +12,10 @@
 - Added localization folder
 - Added robux.png image in ./app/assets/images/robux.png
 - Added components.vue page for components sample
+
+### V1.0.2
+- Added landing page at index.vue 
+- Added Footer
+- Minor changed in Primary and Secondary Buttons
+- Added animation for index.vue with gsap at ./app/plugins & ./app/utils/gsap
+- Added Responsive in Header, Footer, and index.vue page
