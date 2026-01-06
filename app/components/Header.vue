@@ -7,19 +7,31 @@
         </p>
       </div>
       <div class="hidden lg:flex items-center gap-8">
-        <ButtonsHeader label="Home" to="login" />
+        <NuxtLink to="home">
+          <ButtonsHeader label="Home" />
+        </NuxtLink>
         <ButtonsHeader label="Robux" variant="dropdown" :active="activeMenu === 'robux'"
           :items="[
-            { label: 'Robux Via Login', to: 'login' },
-            { label: 'Robux Via Gamepass', to: 'gamepass' },
-            { label: 'Robux Via Gift Card', to: 'giftcard' },
+            { label: 'Robux Via Login', to: 'robux/login' },
+            { label: 'Robux Via Gamepass', to: 'robux/gamepass' },
+            { label: 'Robux Via Gift Card', to: 'robux/giftcard' },
           ]"/>
-        <ButtonsHeader label="List Item" />
-        <ButtonsHeader label="Pesanan" />       
+        <NuxtLink to="items">
+          <ButtonsHeader label="List Item" />
+        </NuxtLink>
+        <NuxtLink to="account/{id}/transactions">
+          <ButtonsHeader label="Pesanan" />
+        </NuxtLink>       
         <div class="pl-4 flex items-center gap-4 border-l border-gray-200">
-          <ButtonsIcon icon="mdi:trophy-outline" size="24" class="text-black cursor-pointer"/>
-          <ButtonsIcon icon="mdi:cart-outline" size="24" class="text-black cursor-pointer"/>
-          <ButtonsPrimary variant="solid" color="secondary" icon="mdi:arrow-right-circle-outline">Login</ButtonsPrimary>
+          <NuxtLink to="leaderboard">
+            <ButtonsIcon icon="mdi:trophy-outline" size="24" class="text-black cursor-pointer"/>
+          </NuxtLink>
+          <NuxtLink to="account/{id}/cart">
+            <ButtonsIcon icon="mdi:cart-outline" size="24" class="text-black cursor-pointer"/>
+          </NuxtLink>
+          <NuxtLink to="login">
+            <ButtonsPrimary variant="solid" color="secondary" icon="mdi:arrow-right-circle-outline">Login</ButtonsPrimary>
+          </NuxtLink>
         </div>
       </div>
       <div class="lg:hidden flex items-center justify-end w-full">

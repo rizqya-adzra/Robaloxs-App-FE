@@ -6,7 +6,8 @@ The all in one platform for expanding your Robux with affordable price!
 ## Version (Under Develop, view detail in CHANGELOG.md)
 - v1.0.0 at 2nd Jan 2026
 - v1.0.1 at 3rd Jan 2026
-- v1.0.2 at 5ft Jan 2026
+- v1.0.2 at 5th Jan 2026
+- v1.0.3 at 6th Jan 2026
 
 ## Features
 - White minimalist style
@@ -16,7 +17,11 @@ The all in one platform for expanding your Robux with affordable price!
 
 ## Acknowledgements
 This project is using: 
- - [NuxtJS V$](https://nuxt.com/docs/4.x/getting-started/introduction)
- - [nuxtjd/tailwind](https://tailwindcss.nuxtjs.org/)
- - [nuxtjs/google-fonts](https://nuxt.com/modules/google-fonts)
- - [nuxtjs/gsap](https://nuxt.com/modules/v-gsap)
+- [NuxtJS V4](https://nuxt.com/docs/4.x/getting-started/introduction)
+- [nuxtjs/tailwind](https://tailwindcss.nuxtjs.org/)
+- [nuxtjs/google-fonts](https://nuxt.com/modules/google-fonts)
+- [nuxtjs/gsap](https://nuxt.com/modules/v-gsap)
+- [nuxtjs/i18n](https://nuxt.com/modules/i18n)
+
+## View BackEnd Repo
+- [Robaloxs-App-BE](https://github.com/rizqya-adzra/Robaloxs-App-BE)

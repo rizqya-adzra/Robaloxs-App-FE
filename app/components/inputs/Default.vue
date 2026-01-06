@@ -1,7 +1,7 @@
 <template>
   <div class="w-full space-y-2">
     <div v-if="label" class="flex items-center justify-between">
-      <label class="text-sm font-semibold text-black">
+      <label class="text-sm font-semibold text-black/70">
         {{ label }}
       </label>
 
@@ -29,7 +29,7 @@ const props = defineProps<{
   color?: 'primary' | 'secondary' | 'black'
 }>()
 
-const base = 'font-inter w-full rounded-xl bg-white outline-none transition-all duration-200 placeholder:text-gray-400 text-black h-12 px-5'
+const base = 'font-inter w-full rounded-lg bg-white outline-none transition-all duration-200 placeholder:text-accent/70 text-black h-12 px-5'
 
 const variant = computed(() =>
   props.variant === 'focus' ? 'border-4' : 'border-2'
@@ -43,7 +43,7 @@ const color = computed(() => {
     return 'border-secondary/50 focus:shadow-[inset_0_0_0_2px_#4AF5C5]'
   }
   if (props.color === 'black') {
-    return 'border-black/50 focus:shadow-[inset_0_0_0_2px_black]'
+    return 'border-accent/70 focus:shadow-[inset_0_0_0_2px_black]'
   }
   return ''
 })

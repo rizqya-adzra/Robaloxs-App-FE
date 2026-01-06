@@ -19,3 +19,8 @@
 - Minor changed in Primary and Secondary Buttons
 - Added animation for index.vue with gsap at ./app/plugins & ./app/utils/gsap
 - Added Responsive in Header, Footer, and index.vue page
+
+### V1.0.3
+- Added login.vue and register.vue page
+- Added guest layout
+- minor change in ./app/inputs/Default.vue
