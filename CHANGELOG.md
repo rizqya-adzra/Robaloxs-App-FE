@@ -24,3 +24,8 @@
 - Added login.vue and register.vue page
 - Added guest layout
 - minor change in ./app/inputs/Default.vue
+
+### V1.0.4
+- Added via-login.vue at ./app/pages/robux/via-login.vue
+- Added card component at ./app/components/cards/Default.vue
+- Minor change in Default Checkboxes 

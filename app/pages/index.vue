@@ -170,9 +170,9 @@
 
 <script setup lang="ts">
 import { ref, computed} from 'vue'
-import { useCarousel } from '~/utils/gsap/useInfiniteCarousel' 
-import { useMarquee } from '~/utils/gsap/useInfiniteMarquee' 
-import { useFaqAnimation } from '~/utils/gsap/useFaqAnimation' 
+import { useCarousel } from '~/composables/gsap/useInfiniteCarousel' 
+import { useMarquee } from '~/composables/gsap/useInfiniteMarquee' 
+import { useFaqAnimation } from '~/composables/gsap/useFaqAnimation' 
 
 const reviews = [
   { id: 1, name: '@aagus', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' }, 

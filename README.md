@@ -8,6 +8,7 @@ The all in one platform for expanding your Robux with affordable price!
 - v1.0.1 at 3rd Jan 2026
 - v1.0.2 at 5th Jan 2026
 - v1.0.3 at 6th Jan 2026
+- v1.0.4 at 7th Jan 2026
 
 ## Features
 - White minimalist style

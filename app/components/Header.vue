@@ -7,12 +7,12 @@
         </p>
       </div>
       <div class="hidden lg:flex items-center gap-8">
-        <NuxtLink to="home">
+        <NuxtLink to="/">
           <ButtonsHeader label="Home" />
         </NuxtLink>
         <ButtonsHeader label="Robux" variant="dropdown" :active="activeMenu === 'robux'"
           :items="[
-            { label: 'Robux Via Login', to: 'robux/login' },
+            { label: 'Robux Via Login', to: 'robux/via-login' },
             { label: 'Robux Via Gamepass', to: 'robux/gamepass' },
             { label: 'Robux Via Gift Card', to: 'robux/giftcard' },
           ]"/>
