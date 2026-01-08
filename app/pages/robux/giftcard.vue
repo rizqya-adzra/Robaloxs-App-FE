@@ -1,21 +1,21 @@
 <template>
   <div class="mx-auto max-w-[1050px] py-20">
-    <p class="font-inter font-bold text-4xl mb-5">Beli Robux Via <span class="text-primary">Login</span></p>
+    <p class="font-inter font-bold text-4xl mb-5">Beli Robux Via <span class="text-primary">Gift Card</span></p>
     <div class="flex justify-center items-start">
       <div class="flex justify-between items-start gap-5">
         <div class="space-y-5">
           <CardsDefault step="1">
             <template #title>
-              Masukan Username & Password Roblox
+              Masukan Nomor Whatsapp
+            </template>
+            <template #toggle>
+              <ButtonsSwitch v-model="sendViaWA" />
             </template>
             <template #inputs>
-              <div class="flex justify-start items-center gap-4">
-                <InputsDefault placeholder="username" variant="default" color="black" />
-                <InputsDefault placeholder="password" variant="default" color="black" />
-              </div>
+              <InputsDefault placeholder="cth: 08xxxxxxx" variant="default" color="black" />
             </template>
             <template #description>
-              Pastikan Username dan Password in game anda sudah sesuai dengan yang dicantumkan agar tidak terjadi kegagalan atau error di saat transaksi.
+              Data untuk pengiriman Gift Card, dapat menggunakan Whatsapp atau Email
             </template>
           </CardsDefault>
           <CardsDefault step="2">
@@ -84,20 +84,6 @@
               </div>
             </template>
           </CardsDefault>
-          <CardsDefault step="4">
-            <template #title>
-              Masukan Nomor Whatsapp & Email
-            </template>
-            <template #inputs>
-              <div class="flex justify-start items-center gap-4">
-                <InputsDefault placeholder="cth: 08xxxxxxx" variant="default" color="black" />
-                <InputsDefault placeholder="email cth: robaloxs@gmail.com" variant="default" color="black" />
-              </div>
-            </template>
-            <template #description>
-              No Whatsapp wajib di cantumkan agar admin bisa menghubungi untuk konfirmasi pesanan atau jika ada kendala.
-            </template>
-          </CardsDefault>
         </div>
         <div class="sticky top-20 space-y-5 p-10 bg-tertiary border-2 border-accent/50 rounded-3xl max-w-[500px]">   
           <div class="flex justify-start items-center gap-4 w-[300px]">
@@ -143,4 +129,6 @@ import cimb_niaga from "~/assets/images/payment/cimb_niaga.png"
 import gopay from "~/assets/images/payment/gopay.png"
 import mandiri from "~/assets/images/payment/mandiri.png"
 import qris from "~/assets/images/payment/qris.png"
+import ViaLogin from "./via-login.vue"
+const sendViaWA = ref(true)
 </script>

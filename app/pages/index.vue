@@ -1,50 +1,60 @@
 <template>
-  <div class="flex flex-col-reverse lg:flex-row mt-10 lg:mt-3 justify-center items-center gap-8 lg:gap-44 px-6 lg:px-0">
-    
-    <div class="flex flex-col items-center lg:items-start justify-start gap-8 lg:gap-10 w-full md:w-[80%] lg:w-auto">  
-      <p class="font-inter text-4xl md:text-5xl lg:text-6xl leading-tight text-center lg:text-left">
-        Beli <span class="font-extrabold">Robux</span> <br class="hidden lg:block"> 
-        dengan berbagai <br class="hidden lg:block">
-        metode disini! <br class="hidden lg:block">
-        <span class="text-primary block mt-2 lg:mt-0">Top Up Sekarang</span>
-      </p>
+  <div class="relative w-full h-screen overflow-hidden bg-white">
+    <video 
+      autoplay 
+      loop 
+      muted 
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="@/assets/videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="relative flex flex-col-reverse -mt-12 lg:flex-row h-screen justify-center items-center gap-8 lg:gap-44 px-6 lg:px-0">
+      <div class="flex flex-col items-center lg:items-start justify-start gap-8 lg:gap-10 w-full md:w-[80%] lg:w-auto">  
+        <p class="font-inter text-4xl text-[clamp(3rem,4vw,6rem)] leading-none text-center lg:text-left">
+          Beli <span class="font-extrabold">Robux</span> <br class="hidden lg:block"> 
+          dengan berbagai <br class="hidden lg:block">
+          metode disini! <br class="hidden lg:block">
+          <span class="text-primary block mt-2 lg:mt-0">Top Up Sekarang</span>
+        </p>
 
-      <div class="flex flex-col gap-3 w-full lg:w-auto items-center lg:items-start">
-        <div class="flex flex-wrap justify-center lg:justify-start gap-2 w-full">
-          <ButtonsSecondary class="flex-1 lg:flex-none min-w-[120px]">Gamepass</ButtonsSecondary>
-          <ButtonsSecondary class="flex-1 lg:flex-none min-w-[120px]">Via Login</ButtonsSecondary>
+        <div class="flex flex-col gap-3 w-full lg:w-auto items-center lg:items-start">
+          <div class="flex flex-wrap justify-center lg:justify-start gap-2 w-full">
+            <ButtonsSecondary class="flex-1 lg:flex-none min-w-[120px]">Gamepass</ButtonsSecondary>
+            <ButtonsSecondary class="flex-1 lg:flex-none min-w-[120px]">Via Login</ButtonsSecondary>
+          </div>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-2 w-full whitespace-nowrap">
+            <ButtonsSecondary class="flex-1 lg:flex-none min-w-[120px]">Gift Card</ButtonsSecondary>
+            <ButtonsSecondary variant="gradient" class="flex-1 lg:flex-none min-w-[120px]">Beli Item in-game</ButtonsSecondary>
+          </div>
         </div>
-        <div class="flex flex-wrap justify-center lg:justify-start gap-2 w-full whitespace-nowrap">
-          <ButtonsSecondary class="flex-1 lg:flex-none min-w-[120px]">Gift Card</ButtonsSecondary>
-          <ButtonsSecondary variant="gradient" class="flex-1 lg:flex-none min-w-[120px]">Beli Item in-game</ButtonsSecondary>
+
+        <div class="flex flex-wrap justify-evenly md:justify-center lg:justify-start gap-6 lg:gap-8 w-full text-left">
+          <div class="flex flex-col">
+            <p class="font-inter text-xs md:text-sm text-gray-500">Mulai dari</p>
+            <p class="font-inter font-bold text-sm md:text-lg text-primary">10k - 100 Robux</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-inter text-xs md:text-sm text-gray-500">Terjual</p>
+            <p class="font-inter font-bold text-sm md:text-lg text-primary">65.000+</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="font-inter text-xs md:text-sm text-gray-500">Tersisa</p>
+            <p class="font-inter font-bold text-sm md:text-lg text-primary">105.000+</p>
+          </div>
         </div>
       </div>
-
-      <div class="flex flex-wrap justify-evenly md:justify-center lg:justify-start gap-6 lg:gap-8 w-full text-left">
-        <div class="flex flex-col">
-          <p class="font-inter text-xs md:text-sm text-gray-500">Mulai dari</p>
-          <p class="font-inter font-bold text-sm md:text-lg text-primary">10k - 100 Robux</p>
-        </div>
-        <div class="flex flex-col">
-          <p class="font-inter text-xs md:text-sm text-gray-500">Terjual</p>
-          <p class="font-inter font-bold text-sm md:text-lg text-primary">65.000+</p>
-        </div>
-        <div class="flex flex-col">
-          <p class="font-inter text-xs md:text-sm text-gray-500">Tersisa</p>
-          <p class="font-inter font-bold text-sm md:text-lg text-primary">105.000+</p>
-        </div>
+      <div class="w-full lg:w-auto flex justify-center">
+        <img 
+          src="@/assets/images/image.png" 
+          alt="Roblox Character" 
+          class="w-[60%] md:w-[40%] lg:w-[340px] max-w-[500px] h-auto object-contain"
+        >
       </div>
-    </div>
-    <div class="w-full lg:w-auto flex justify-center">
-      <img 
-        src="@/assets/images/image.png" 
-        alt="Roblox Character" 
-        class="hidden md:flex md:w-[40%] lg:w-[340px] max-w-[500px] h-auto object-contain"
-      >
     </div>
   </div>
 
-  <div class="w-full overflow-hidden bg-gradient-to-b from-tertiary to-white my-32 py-7 group relative z-10">
+  <div class="w-full overflow-hidden bg-gradient-to-b from-tertiary to-white mb-32 py-7 group relative z-10">
     <div ref="marqueeRef" class="flex w-max items-center">
       <div class="flex items-center gap-24 px-5">
         <template v-for="(item, index) in seamlessItems" :key="`orig-${index}`">

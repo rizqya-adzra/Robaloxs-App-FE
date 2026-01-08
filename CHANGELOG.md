@@ -29,3 +29,10 @@
 - Added via-login.vue at ./app/pages/robux/via-login.vue
 - Added card component at ./app/components/cards/Default.vue
 - Minor change in Default Checkboxes 
+
+### V1.0.5
+- Added gamepass.vue at ./app/pages/robux/gamepass.vue
+- Added giftcard.vue at ./app/pages/robux/giftcard.vue
+- Minor change in card component at ./app/components/cards/Default.vue
+- Added background video into index.vue
+- Added Switch Button at ./app/components/buttons/Switch.vue

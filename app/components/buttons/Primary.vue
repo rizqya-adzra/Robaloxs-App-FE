@@ -8,7 +8,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   variant?: 'solid' | 'outlined'
-  color?: 'secondary' | 'primary' | 'black'
+  color?: 'secondary' | 'primary' | 'black' | 'gray'
   icon?: string
 }>()
 
@@ -37,6 +37,11 @@ const color = computed(() => {
         return 'border-black text-black hover:bg-black hover:text-white'
       }
       return 'border-black bg-black hover:bg-black/80 text-white'
+    case 'gray':
+      if (props.variant === 'outlined') {
+        return 'border-gray text-gray hover:bg-gray hover:text-white'
+      }
+      return 'border-gray-300 bg-gray-300 hover:bg-gray-400 text-white'
     default:
       return ''
   }
