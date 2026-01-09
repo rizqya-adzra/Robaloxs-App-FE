@@ -1,8 +1,8 @@
 <template>
   <div class="mx-auto max-w-[1050px] py-20">
-    <p class="font-inter font-bold text-4xl mb-5">Beli Robux Via <span class="text-primary">Gamepass</span></p>
-    <div class="flex justify-center items-start">
-      <div class="flex justify-between items-start gap-5">
+    <p class="font-inter font-bold text-4xl mb-5 text-center lg:text-start">Beli Robux Via <span class="text-primary">Gamepass</span></p>
+    <div class="flex justify-center items-start ">
+      <div class="flex flex-col lg:flex-row justify-between items-start gap-5">
         <div class="space-y-5">
           <CardsDefault step="1">
             <template #title>
@@ -45,33 +45,17 @@
               Pilih Jumlah Robux 
             </template>
             <template #inputs>
-              <div class="space-y-5">
-                <div class="flex justify-start items-center gap-4">  
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
+              <div class="flex flex-wrap justify-center items-center gap-4">
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
+                <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />
                 </div>
-                <div class="flex justify-start items-center gap-4">  
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                </div>
-                <div class="flex justify-start items-center gap-4">  
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                </div>
-                <div class="flex justify-start items-center gap-4">  
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                </div>
-                <div class="flex justify-start items-center gap-4">  
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                  <CheckboxesDefault :image="robux" modelValue="" value="100" qty="100 Robux" price="Rp10.000" />        
-                </div>
-              </div>
             </template>
           </CardsDefault>
           <CardsDefault step="4">
@@ -214,7 +198,7 @@
             </template>
           </CardsDefault>
         </div>
-        <div class="sticky top-20 space-y-5 p-10 bg-tertiary border-2 border-accent/50 rounded-3xl max-w-[500px]">   
+        <div class="sticky top-20 space-y-5 p-10 bg-tertiary border-2 border-accent/50 rounded-3xl w-screen md:w-full lg:max-w-[500px]">   
           <div class="flex justify-start items-center gap-4 w-[300px]">
             <div class="font-inter font-bold text-xl">              
               Checkout        

@@ -1,6 +1,6 @@
 <template>
   <div :class="[base, isActive ? focus : defaultClass]" @click="select">
-    <Icon :name="isActive ? 'mdi:radiobox-marked' : 'mdi:radiobox-blank'" size="12" />
+    <Icon class="hidden md:block" :name="isActive ? 'mdi:radiobox-marked' : 'mdi:radiobox-blank'" size="12" />
     <img :src="image" alt="Robux" class="w-6" />
     <div class="flex flex-col items-start justify-center">
       <p class="font-inter text-sm font-bold">

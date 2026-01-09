@@ -1,7 +1,10 @@
 # Welcome to Robaloxs!
 
 ## Introduction
-The all in one platform for expanding your Robux with affordable price!
+The all in one platform for expanding your Robux with affordable price! in here you can buy many type of robux including in-game server items.
+Be the first at leaderboard by purchasing often so you're account can reach up and beat others!
+Collect many badges by completing achievements whether it's daily, weekly, or even yearly task!
+Join us to gain more and more discounts.
 
 ## Version (Under Development, view detail in CHANGELOG.md)
 - v1.0.0 at 2nd Jan 2026
@@ -10,6 +13,7 @@ The all in one platform for expanding your Robux with affordable price!
 - v1.0.3 at 6th Jan 2026
 - v1.0.4 at 7th Jan 2026
 - v1.0.5 at 8th Jan 2026
+- v1.0.6 at 9th Jan 2026
 
 ## Features
 - White minimalist style

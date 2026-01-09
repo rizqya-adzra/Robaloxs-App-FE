@@ -36,3 +36,7 @@
 - Minor change in card component at ./app/components/cards/Default.vue
 - Added background video into index.vue
 - Added Switch Button at ./app/components/buttons/Switch.vue
+
+### V1.0.6
+- Fix responsiveness in robux page folders
+- Minor change in Header and CheckboxesDefault

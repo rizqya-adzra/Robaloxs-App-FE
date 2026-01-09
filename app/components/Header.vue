@@ -12,24 +12,24 @@
         </NuxtLink>
         <ButtonsHeader label="Robux" variant="dropdown" :active="activeMenu === 'robux'"
           :items="[
-            { label: 'Robux Via Login', to: 'robux/via-login' },
-            { label: 'Robux Via Gamepass', to: 'robux/gamepass' },
-            { label: 'Robux Via Gift Card', to: 'robux/giftcard' },
+            { label: 'Robux Via Login', to: '/robux/via-login' },
+            { label: 'Robux Via Gamepass', to: '/robux/gamepass' },
+            { label: 'Robux Via Gift Card', to: '/robux/giftcard' },
           ]"/>
-        <NuxtLink to="items">
+        <NuxtLink to="/items">
           <ButtonsHeader label="List Item" />
         </NuxtLink>
-        <NuxtLink to="account/{id}/transactions">
+        <NuxtLink to="/account/{id}/transactions">
           <ButtonsHeader label="Pesanan" />
         </NuxtLink>       
         <div class="pl-4 flex items-center gap-4 border-l border-gray-200">
-          <NuxtLink to="leaderboard">
+          <NuxtLink to="/leaderboard">
             <ButtonsIcon icon="mdi:trophy-outline" size="24" class="text-black cursor-pointer"/>
           </NuxtLink>
           <NuxtLink to="account/{id}/cart">
             <ButtonsIcon icon="mdi:cart-outline" size="24" class="text-black cursor-pointer"/>
           </NuxtLink>
-          <NuxtLink to="login">
+          <NuxtLink to="/login">
             <ButtonsPrimary variant="solid" color="secondary" icon="mdi:arrow-right-circle-outline">Login</ButtonsPrimary>
           </NuxtLink>
         </div>
@@ -57,14 +57,35 @@
       </button>
       <div class="px-6 pt-16 flex flex-col gap-4 h-full" :class="isOpen ? 'opacity-100 delay-100' : 'opacity-0 pointer-events-none'">
         <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Menu</p>
-        <a href="#" class="text-2xl font-bold text-black hover:text-gray-600">Home</a>
-        <a href="#" class="text-2xl font-bold text-black hover:text-gray-600">Robux</a>
-        <a href="#" class="text-2xl font-bold text-black hover:text-gray-600">List Item</a>
-        <a href="#" class="text-2xl font-bold text-black hover:text-gray-600">Pesanan</a>
+        <NuxtLink to="/">
+          <a class="text-2xl font-bold text-black hover:text-gray-600">Home</a>
+        </NuxtLink>
+        <div class="flex flex-col">
+          <a class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">Robux</a>
+          <div class="flex flex-col gap-4">
+            <NuxtLink to="/robux/via-login">
+              <a class="ml-5 text-2xl font-bold text-black hover:text-gray-600">Via-Login</a>
+            </NuxtLink>
+            <NuxtLink to="/robux/gamepass">
+              <a class="ml-5 text-2xl font-bold text-black hover:text-gray-600">Gamepass</a>
+            </NuxtLink>
+            <NuxtLink to="/robux/giftcard">
+              <a class="ml-5 text-2xl font-bold text-black hover:text-gray-600">Giftcard</a>
+            </NuxtLink>
+          </div>
+        </div>
+        <NuxtLink to="/server">
+          <a class="text-2xl font-bold text-black hover:text-gray-600">List Item</a>
+        </NuxtLink>
+        <NuxtLink to="/transaction">
+          <a class="text-2xl font-bold text-black hover:text-gray-600">Pesanan</a>
+        </NuxtLink>
         <div class="h-px w-full bg-gray-200 my-2"></div>
-        <a href="#" class="bg-black hover:bg-gray-800 text-white py-4 rounded-2xl text-center font-bold text-lg flex justify-center items-center gap-2">
-          Login Sekarang <Icon name="mdi:arrow-right" />
-        </a>
+        <NuxtLink to="/login">
+          <a class="bg-black hover:bg-gray-800 text-white py-4 rounded-2xl text-center font-bold text-lg flex justify-center items-center gap-2">
+            Login Sekarang <Icon name="mdi:arrow-right" />
+          </a>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -75,4 +96,9 @@
 import { ref } from 'vue'
 
 const isOpen = ref(false)
+const route = useRoute()
+
+watch(() => route.path, () => {
+  isOpen.value = false
+})
 </script>

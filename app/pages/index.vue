@@ -11,7 +11,7 @@
     </video>
     <div class="relative flex flex-col-reverse -mt-12 lg:flex-row h-screen justify-center items-center gap-8 lg:gap-44 px-6 lg:px-0">
       <div class="flex flex-col items-center lg:items-start justify-start gap-8 lg:gap-10 w-full md:w-[80%] lg:w-auto">  
-        <p class="font-inter text-4xl text-[clamp(3rem,4vw,6rem)] leading-none text-center lg:text-left">
+        <p class="font-inter text-4xl text-[2rem] md:text-[clamp(3rem,4vw,6rem)] leading-none text-center lg:text-left">
           Beli <span class="font-extrabold">Robux</span> <br class="hidden lg:block"> 
           dengan berbagai <br class="hidden lg:block">
           metode disini! <br class="hidden lg:block">
