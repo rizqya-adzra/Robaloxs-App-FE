@@ -40,3 +40,10 @@
 ### V1.0.6
 - Fix responsiveness in robux page folders
 - Minor change in Header and CheckboxesDefault
+
+### V1.0.7
+- Added Server folder 
+- Added ButtonsFilter
+- Added InputsSearchBar
+- Minor change in Robux folder
+- Minor change in CardCheckout

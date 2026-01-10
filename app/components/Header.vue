@@ -16,7 +16,7 @@
             { label: 'Robux Via Gamepass', to: '/robux/gamepass' },
             { label: 'Robux Via Gift Card', to: '/robux/giftcard' },
           ]"/>
-        <NuxtLink to="/items">
+        <NuxtLink to="/server">
           <ButtonsHeader label="List Item" />
         </NuxtLink>
         <NuxtLink to="/account/{id}/transactions">

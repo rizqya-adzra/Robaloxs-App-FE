@@ -69,36 +69,12 @@
             </template>
           </CardsDefault>
         </div>
-        <div class="sticky top-20 space-y-5 p-10 bg-tertiary border-2 border-accent/50 rounded-3xl w-screen md:w-full lg:max-w-[500px]">   
-          <div class="flex justify-start items-center gap-4 w-[300px]">
-            <div class="font-inter font-bold text-xl">              
-              Checkout        
-            </div>
-          </div>
-          <div class="space-y-3">
-            <div class="flex justify-between items-center gap-4">  
-              <p class="font-inter text-sm">Jumlah Robux</p>
-              <p class="font-inter text-sm font-bold">100 Robux</p>
-            </div>
-            <div class="flex justify-between items-center gap-4">  
-              <p class="font-inter text-sm">Metode Pembayaran</p>
-              <p class="font-inter text-sm font-bold">QRIS</p>
-            </div>
-            <div class="flex justify-between items-center gap-4">  
-              <p class="font-inter text-sm">No. Whatsapp</p>
-              <p class="font-inter text-sm font-bold">0882-9962-1867</p>
-            </div>
-            <div class="border-2 border-accent rounded-full"></div>
-          </div>
-          <div class="flex flex-col gap-2">
-            <div class="flex justify-between items-center gap-4 mb-3">  
-              <p class="font-inter text-sm font-bold">Total</p>
-              <p class="font-inter font-bold text-xl">Rp10.000</p>
-            </div>
-            <ButtonsPrimary variant="solid" color="secondary">Beli Sekarang</ButtonsPrimary>
-            <ButtonsPrimary variant="solid" color="gray">Masukan Keranjang</ButtonsPrimary>
-          </div>
-        </div>
+        <CardsCheckout>
+          <template #item-name></template>
+          <template #payment-method></template>
+          <template #contact-info></template>
+          <template #total-price></template>
+        </CardsCheckout>
       </div>
     </div>
   </div>
