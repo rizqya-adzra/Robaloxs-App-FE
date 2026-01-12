@@ -89,6 +89,5 @@ import cimb_niaga from "~/assets/images/payment/cimb_niaga.png"
 import gopay from "~/assets/images/payment/gopay.png"
 import mandiri from "~/assets/images/payment/mandiri.png"
 import qris from "~/assets/images/payment/qris.png"
-import ViaLogin from "./via-login.vue"
 const sendViaWA = ref(true)
 </script>

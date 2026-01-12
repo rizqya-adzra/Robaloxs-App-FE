@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-full overflow-hidden rounded-[30px] border-2 border-accent/30 bg-tertiary w-full max-w-[336px] font-inter relative">
+  <div class="flex flex-col h-full overflow-hidden rounded-[30px] border border-accent/30 bg-tertiary w-full max-w-[336px] font-inter relative">
     <div v-if="variant === 1" class="flex flex-col h-full">
       <div class="relative w-full h-[180px] overflow-hidden bg-gray-100 shrink-0">
         <img :src="image" alt="Item Image" class="w-full h-full object-cover" />

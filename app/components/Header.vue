@@ -26,7 +26,7 @@
           <NuxtLink to="/leaderboard">
             <ButtonsIcon icon="mdi:trophy-outline" size="24" class="text-black cursor-pointer"/>
           </NuxtLink>
-          <NuxtLink to="account/{id}/cart">
+          <NuxtLink to="/cart">
             <ButtonsIcon icon="mdi:cart-outline" size="24" class="text-black cursor-pointer"/>
           </NuxtLink>
           <NuxtLink to="/login">

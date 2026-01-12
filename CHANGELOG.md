@@ -47,3 +47,6 @@
 - Added InputsSearchBar
 - Minor change in Robux folder
 - Minor change in CardCheckout
+
+### V1.0.8
+- Added Cart Page

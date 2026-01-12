@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-5 p-10 bg-tertiary border-2 border-accent/50 rounded-3xl w-screen md:max-w-[650px]">
+  <div class="space-y-5 p-10 bg-tertiary border border-accent/50 rounded-3xl w-screen md:max-w-[650px]">
     
     <div class="flex justify-between items-center gap-4">
       <div class="flex gap-4 items-center">
