@@ -50,3 +50,6 @@
 
 ### V1.0.8
 - Added Cart Page
+
+### V1.0.9
+- Minor change in cart.py
