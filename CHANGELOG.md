@@ -53,3 +53,7 @@
 
 ### V1.0.9
 - Minor change in cart.py
+
+### V1.0.10
+- fixed profile page designs
+- added BadgesDefault
