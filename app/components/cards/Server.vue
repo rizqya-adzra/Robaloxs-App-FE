@@ -22,7 +22,7 @@
           </div>
         </div>
           <NuxtLink to="/server/items">
-            <ButtonsPrimary variant="solid" color="secondary" icon="mdi:arrow" class="w-full">
+            <ButtonsPrimary variant="solid" color="secondary" icon="mdi:arrow-top-right" class="w-full">
               Beli Sekarang
             </ButtonsPrimary>
           </NuxtLink>

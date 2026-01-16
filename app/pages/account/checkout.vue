@@ -65,11 +65,25 @@
             </template>
           </CardsDefault>
         </div>
-        <CardsCheckout>
+        <CardsCheckout variant="summary">
           <template #item-name></template>
-          <template #payment-method></template>
-          <template #contact-info></template>
-          <template #total-price></template>
+          <template #products>
+            <div class="flex items-center gap-3 p-4 bg-white rounded-3xl">
+               <img :src="robux" alt="Robux" class="w-10">
+               <div class="flex-1">
+                 <p class="text-sm font-bold">Top-up Robux via Login</p>
+                 <p class="text-xs text-gray-500">15000 Robux</p>
+               </div>
+               <div class="text-right">
+                 <p class="text-sm font-bold">Rp2.100.000</p>
+                 <p class="text-xs text-gray-400">3x</p>
+               </div>
+            </div>
+          </template>
+          <template #payment-method>Qris</template>
+          <template #subtotal>Rp2.100.000</template>
+          <template #admin-fee>Rp10.000</template>
+          <template #total-price>Rp2.100.000</template>
         </CardsCheckout>
       </div>
     </div>

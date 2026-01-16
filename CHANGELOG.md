@@ -57,3 +57,11 @@
 ### V1.0.10
 - fixed profile page designs
 - added BadgesDefault
+
+### V1.0.11
+- added checkout page
+
+### V1.0.12
+- added leaderboard page
+- fixed checkout page
+- added variant 3 "summary" in CardsCheckout at ./app/components/cards/Checkout.vue
